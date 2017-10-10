@@ -10,10 +10,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	border:        1px solid black;
 	text-overflow: ellipsis;
 	overflow:      hidden;
-	}   
+	}
+li {
+	padding-top:  5px;
+	padding-bottom: 5px
+}  
 #pic1 {
-	width:         40%;
-	height:        40%;	
+	width:         15%;
+	height:        1525%;	
 	padding:       1px;
 	border:        1px solid black;
 	text-overflow: ellipsis;
