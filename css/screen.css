@@ -11,6 +11,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	text-overflow: ellipsis;
 	overflow:      hidden;
 }
+main {
+	background: #f3f3f3; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;
+}
+#siteid {
+		text-align: center;
+}
 #pic1 {
 	float: left;
 	width:         20%;
@@ -19,16 +25,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	margin-bottom: 5px;
 	padding:       0;
 	border:        1px solid black;
-	text-overflow: ellipsis;
-	overflow:      hidden;
 }
-#siteid {
-    float: left;
-		font-size: 1em;
-    text-decoration: none;
-		margin-top:  75px;
-		margin-left: 25px;
-    color: #4CAF50;
+figcaption {
+	clear: left;
+	padding-left: 0px;
+	font-size: .85em;
+	font-weight: bold;
 }
 #audiocontrol {
 	padding:       1px;
@@ -36,15 +38,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	text-overflow: ellipsis;
 	overflow:      hidden;
 }   
+/*--------------------------------------------------------*/
+/*- Mobile-First: Mobile Users Get Vertical Stacked Menu -*/
+/*--------------------------------------------------------*/  
 
-/*---------------------------------------------------------------------*/
-/*- Mobile-First: Start With Vertical Stacked Menu for Mobile Devices -*/
-/*---------------------------------------------------------------------*/  
 /* remove bullets, margins, and padding from nav unordered list */
-
 nav {
 		clear: left;
-		margin-top: 25px;
+		margin-top: 10px;
 }
 nav ul {
     list-style-type: none;
@@ -77,7 +78,6 @@ nav ul {
     margin: 0;
     padding: 0;
 		width: 92px;
-/*  background-color: #f1f1f1; */
 		background-color: #333;
 }
 
@@ -113,22 +113,20 @@ nav ul li {
 nav ul li:last-child {
     border-bottom: none;
 }
-/*--------------------------------*/
-/*- End Create CSS Vertical Menu -*/
-/*--------------------------------*/  
-
-/*--------------------------------------------------------------------------------------------------*/
-/*- Below CSS Media Query Transforms Vertical Stacked Menu Into Horizontal Menu for Larger Devices -*/
-/*--------------------------------------------------------------------------------------------------*/
+/*------------------------------------*/
+/*- This Concludes Mobile-First Menu -*/
+/*------------------------------------*/  
 
 	@media only screen and (min-width: 480px) {
-		
-
+/*----------------------------------------------------------------------------*/
+/*- If Not Mobile User: Transform Vertical Stacked Menu Into Horizontal Menu -*/
+/*----------------------------------------------------------------------------*/
 		nav ul {
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
-				width: 368px;
+				width: 276px;
+/*			width: 368px;  */
 				overflow: hidden;
 				background-color: #333;
 		}
