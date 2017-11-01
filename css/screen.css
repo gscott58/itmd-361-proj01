@@ -9,9 +9,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	border:        1px solid black;
 	text-overflow: ellipsis;
 	overflow:      hidden;
+	background-image: url("../backgrounds/20.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;;
 }
 main {
-	background: #f3f3f3; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;
+	background-color: #e9e9e9; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 #siteid {
 		text-align: center;
@@ -22,27 +27,42 @@ main {
 	height:        20%;
 	margin-top:		 10px;
 	margin-bottom: 10px;
+	margin-left:   10px;
 	padding:       0;
 	border:        1px solid black;
 }
 
 figcaption {
 	clear: left;
+	margin-left: 10px;
 	padding-left: 0px;
 	font-size: .85em;
 	font-weight: bold;
 }
+p {
+	margin-left: 10px;
+}
 video {
 	float: left;
-	width:         20%;
-	height:        20%;
-	margin-top:		 10px;
+	width:         30%;
+	height:        auto;
+	margin-top:		 5px;
 	margin-bottom: 10px;
+	margin-left:   10px;
+	margin-right:  10px;
 	padding:       0;
 	border:        1px solid black;
 }
+#video-caption {
+
+	float: left;
+	margin-top:		 10px;
+	margin-bottom: 10px;
+	padding-left:  25px;
+}
 footer {
 	clear: left;
+	margin-top: 10px;
 }
 #audiocontrol {
 	padding:       1px;
@@ -58,6 +78,7 @@ footer {
 nav {
 		clear: left;
 		margin-top: 10px;
+		margin-left: 10px;
 }
 nav ul {
     list-style-type: none;
